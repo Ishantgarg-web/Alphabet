@@ -1,0 +1,32 @@
+
+public class alphaa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// here total 8 rows are there
+		
+		for (int i=0;i<=8;i++)
+		{
+			// Here you see the row number 0th and 4th have all columns filled with *.
+			if(i==0 || i==4)
+			{
+				for (int j=0;j<=3;j++)
+				{
+					System.out.print("*");
+				}
+			}
+			else
+			{
+				// for each other rows columne number 0 and 3 are filled.
+				System.out.print("*"); // for col0
+				for (int j=1;j<=2;j++)
+				{
+					System.out.print(" "); // here we need space.
+				}
+				System.out.print("*");
+			}
+			System.out.println(); // This is for starting new line.
+		}
+	}
+
+}
